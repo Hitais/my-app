@@ -3,6 +3,7 @@ node{
         git 'https://github.com/Hitais/my-app.git'
     }
     satge('Compile Package'){
-        sh 'mvn package'
+        def mvnHome = tool name: 'default', type: 'maven'
+        sh "${mvnHome}/bin/mvn package"
     }
 }
