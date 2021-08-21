@@ -3,12 +3,12 @@ pipeline{
     stages{
         
     stage('SCM Checkout'){
-        step{
+        steps{
         git 'https://github.com/Hitais/my-app'
         }
     }
     satge('Compile Package'){
-        step{
+        steps{
             
         def mvnHome = tool name: 'default', type: 'maven'
         sh "${mvnHome}/bin/mvn package"
