@@ -7,10 +7,5 @@ pipeline{
         git 'https://github.com/Hitais/my-app'
         }
     }
-    stage('Compile Package'){
-        steps{
-        sh "mvn package"
-        }
-    }
     }
 }
