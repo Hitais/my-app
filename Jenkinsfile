@@ -7,7 +7,7 @@ pipeline{
         git 'https://github.com/Hitais/my-app'
         }
     }
-    satge('Compile Package'){
+    stage('Compile Package'){
         steps{
             
         def mvnHome = tool name: 'default', type: 'maven'
